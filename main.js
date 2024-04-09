@@ -83,3 +83,43 @@ document.getElementById('clear').addEventListener('click', () => {
     calculation = '';
     handleCalculation();
 })
+
+document.body.addEventListener('keypress', (event) => {
+    if (event.key === '1') {
+        updateCalculation(1);
+    } else if (event.key === '2') {
+        updateCalculation(event.key);
+    } else if (event.key === '3') {
+        updateCalculation(event.key);
+    } else if (event.key === '4') {
+        updateCalculation(event.key);
+    } else if (event.key === '5') {
+        updateCalculation(event.key);
+    } else if (event.key === '6') {
+        updateCalculation(event.key);
+    } else if (event.key === '7') {
+        updateCalculation(event.key);
+    } else if (event.key === '8') {
+        updateCalculation(event.key);
+    } else if (event.key === '9') {
+        updateCalculation(event.key);
+    } else if (event.key === '0') {
+        updateCalculation(event.key);
+    } else if (event.key === '+') {
+        updateCalculation(' + ');
+    } else if (event.key === '-') {
+        updateCalculation(' - ')
+    } else if (event.key === '*') {
+        updateCalculation(' * ');
+    } else if (event.key === '.') {
+        updateCalculation(event.key);
+    } else if (event.key === '/') {
+        updateCalculation(' / ');
+    } else if (event.key === '=' || event.key === 'Enter') {
+        resolve();
+    } else if (event.key === ' ') {
+        calculation = '';
+        handleCalculation();
+    }
+    console.log(event.key)
+})
