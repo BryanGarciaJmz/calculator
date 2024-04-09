@@ -1,0 +1,40 @@
+body {
+    background-color: black;
+
+    .header {
+        display: flex;
+        justify-content: center;
+
+        h2 {
+            margin: 0;
+            padding: 20px 0px;
+            color: white;
+            font-weight: 600;
+            font-size: 60px;
+        }
+    }
+
+    .calculatorBody {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+
+        button {
+            width: 80px;
+            height: 80px;
+            background-color: rgb(240, 240, 240);
+            border-radius: 40px;
+            font-size: 30px;
+            border: none;
+        }
+    }
+
+    .clear button {
+        height: 80px;
+        width: 160px;
+        background-color: rgb(70, 70, 70);
+        color: white;
+    }
+}
